@@ -1,0 +1,31 @@
+.container{
+    width: 75%;
+    height: 100vh;
+    background: rgb(245, 245, 245);
+    min-height: 900px;
+}
+
+.title{
+    text-align: center;
+}
+.subtitle{
+    margin: 10px 40px;
+}
+.logo-img{
+    margin: 10px auto;
+    width: 20%;
+    height: 200px;
+}
+.profile-container{
+    display: flex;
+}
+.photo{
+    padding: 5px 0 5px 30px;
+    width: 50%;
+    height: 300px;
+}
+.text{
+    text-align: left;
+    line-height: 30px;
+    padding: 10px 55px;
+}
