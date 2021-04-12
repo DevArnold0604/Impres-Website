@@ -45,8 +45,13 @@ body{
 .menu .menu-item{
 	height: 30%;
 	padding: 1%;
+	color:#aaa;
 	transition: color .3s;
 	list-style: none;
+}
+.nav-menu .menu .menu-item:hover{
+	cursor:pointer;
+	color:#fff;
 }
 .menu .menu-item a{
 	color:#aaa;
@@ -386,7 +391,7 @@ body{
 	}
 	.menu .menu-item{
 		height:initial;
-		padding: 5px 0;
+		padding: 10px 0;
 		transition: color .3s;
 		list-style: none;
 		cursor: pointer;

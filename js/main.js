@@ -116,6 +116,11 @@ for (const clase of clases) {
 sr.reveal('.categories',{
   duration:2000,
 });
+sr.reveal('.categories-list',{
+  duration:2000,
+  origin: 'bottom',
+  distance: '100px'
+});
 sr.reveal('.breadhumb-container',{
   duration:2000,
   origin: 'left',
