@@ -7,7 +7,7 @@ const submenu=document.getElementById('submenu');
 const menuList=document.getElementById('menu-list');
 
 btnMenu.addEventListener('mouseout',()=>{
-  menu.classList.remove('show');
+  if(innerWidth>450) menu.classList.remove('show');
 })
 btnMenu.addEventListener('click',()=>{
   menu.classList.toggle('show');
@@ -20,7 +20,9 @@ menuList.addEventListener('mouseout',()=>{
   if(innerWidth>450) submenu.classList.remove('visible');
 })
 
-
+menuList.addEventListener('click',()=>{
+  submenu.classList.toggle('hideSubmenu');
+})
 //Carousel with Glider.js
 addEventListener('load',()=>{
     const list = document.querySelector('.carousel-list');
@@ -113,6 +115,11 @@ for (const clase of clases) {
 /*Services*/
 sr.reveal('.categories',{
   duration:2000,
+});
+sr.reveal('.categories-list',{
+  duration:2000,
+  origin: 'bottom',
+  distance: '100px'
 });
 sr.reveal('.breadhumb-container',{
   duration:2000,
